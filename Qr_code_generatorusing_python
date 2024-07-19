@@ -1,1 +1,13 @@
+import qrcode
 
+# Generate QR code
+img = qrcode.make("https://www.linkedin.com/in/anu5priya7/")
+img2 = qrcode.make("https://leetcode.com/u/anukumari/")
+img3= qrcode.make("https://github.com/anu5priya7")
+img4=qrcode.make("https://www.google.com/")
+
+# Save the QR code as an image file
+img.save("anu_linkedin.png")
+img2.save("anu_leetcode.png")
+img3.save("anu_github.png")
+img4.save("google.png")
